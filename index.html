@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TerraCycle Vending Machine Test Task</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+    <!-- This will be the item number mini text code -->
+    <div class="left">
+        <div id="vending-machine">
+            <div class="vending-machine-item-container-numbers" id="vending_machine_numbers"></div>
+            <div class="vending-machine-item-container" id="vending_machine_items"></div>
+        </div>
+        <!-- This will be the two mini displays on the right side of the machine. -->
+        <div class="right">
+            <div class="display-coin">
+                <div class="display-coin-screen">
+                    <p id="vending-machine-counter">0</p>
+                </div>
+            </div>
+            <div class="c-button">
+                <div class="c-button-text">
+                    <p onclick="resetsum()">C</p>
+                </div>
+            </div>
+            <!-- This will be the numpads code -->
+            <div class="numpad">
+                <div class="numpad-container" id="numpad_container"></div>
+            </div>
+        </div>
+    </div>
+    <div class="coin-input">
+        <div class="coin-input-buttons">
+            <img onclick="addsum(200)" src="img/coin-200.png">
+            <img onclick="addsum(100)" src="img/coin-100.png">
+            <img onclick="addsum(50)" src="img/coin-50.png">
+        </div>
+    </div>
+    <div class="exchange-coin">
+        <img src="img/coin-5.png">
+        <p id="counter5">0</p>
+        <img src="img/coin-10.png">
+        <p id="counter10">0</p>
+        <img src="img/coin-20.png">
+        <p id="counter20">0</p>
+        <img src="img/coin-50.png">
+        <p id="counter50">0</p>
+        <img src="img/coin-100.png">
+        <p id="counter100">0</p>
+        <img src="img/coin-200.png">
+        <p id="counter200">0</p>
+    </div>
+</html>
